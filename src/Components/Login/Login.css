@@ -1,0 +1,20 @@
+.flex {
+  display: flex;
+}
+.left-div {
+  background-repeat: no-repeat;
+  width: 50%;
+  background-image: url(../../img/background.png);
+  height: 100vh;
+  text-align: center;
+}
+.right-div {
+  background-color: #233142;
+  color: white;
+  width: 50%;
+  text-align: center;
+}
+.horizontal {
+  display: flex;
+  justify-content: center;
+}
