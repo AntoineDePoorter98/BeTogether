@@ -61,8 +61,11 @@ input {
   line-height: 50px;
   background-color: #f95959;
   font-size: 160%;
+  color: white;
+  cursor: pointer;
 }
 .signup {
   margin-top: 80px;
   color: white;
+  cursor: pointer;
 }

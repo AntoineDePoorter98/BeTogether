@@ -1,4 +1,6 @@
 import "./Login.css";
+import { Link } from "react-router-dom";
+
 let logo = require("../../img/logo.png");
 
 const Login = () => {
@@ -14,24 +16,25 @@ const Login = () => {
         <div className="signin">
           <p>Sign In</p>
         </div>
-        <div>
+        <form action=" /users/login" method="post">
           <div>
-            <input placeholder="@ email adress"></input>
-          </div>
-          <div>
-            <input type="password" placeholder="Password"></input>
-          </div>
-          <div className="horizontal">
             <div>
-              <p className="">Forgot Password ?</p>
+              <input name="" placeholder="@ email adress"></input>
             </div>
+            <div>
+              <input name="" type="password" placeholder="Password"></input>
+            </div>
+
+            <div className="horizontal">
+              <div>
+                <p className="">Forgot Password ?</p>
+              </div>
+            </div>
+            <button className="login">Sign In</button>
           </div>
-          <div className="login">
-            <p>Sign In</p>
-          </div>
-        </div>
+        </form>
         <div className="signup">
-          <p>Don't have an account ? Sign Up</p>
+          <Link to="/signup">Don't have an account ? Sign Up</Link>
         </div>
       </div>
     </div>

@@ -1,4 +1,6 @@
 import "./SignUp.css";
+import { Link } from "react-router-dom";
+
 let logo = require("../../img/logo.png");
 
 const SignUp = () => {
@@ -14,23 +16,23 @@ const SignUp = () => {
         <div className="create">
           <p>Create your account</p>
         </div>
-        <div>
+        <form action="/users/signup" method="post">
           <div>
-            <input placeholder="Username"></input>
+            <div>
+              <input name="" placeholder="Username"></input>
+            </div>
+            <div>
+              <input name="" placeholder="@ email adress"></input>
+            </div>
+            <div>
+              <input name="" type="password" placeholder="Password"></input>
+            </div>
+            <div className="horizontal"></div>
+            <button className="login">Register</button>
           </div>
-          <div>
-            <input placeholder="@ email adress"></input>
-          </div>
-          <div>
-            <input type="password" placeholder="Password"></input>
-          </div>
-          <div className="horizontal"></div>
-          <div className="login">
-            <p>Register</p>
-          </div>
-        </div>
+        </form>
         <div className="signup">
-          <p>Allready have an account ? Log In</p>
+          <Link to="/login">Allready have an account ? Log In</Link>
         </div>
       </div>
     </div>

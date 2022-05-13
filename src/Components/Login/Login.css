@@ -62,7 +62,7 @@ input {
   background-color: #f95959;
   font-size: 160%;
 }
-.signup {
+.signup a {
   margin-top: 80px;
   color: white;
 }
